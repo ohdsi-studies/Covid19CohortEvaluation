@@ -1,0 +1,22 @@
+Package: Covid19CohortEvaluation
+Type: Package
+Title: A Central Package for Evaluation the Cohorts Used in the Various COVID-19 Studies
+Version: 0.0.1
+Author: Martijn Schuemie [aut, cre]
+Maintainer: Martijn J. Schuemie <schuemie@ohdsi.org>
+Description: A central package for evaluation the cohorts used in the various COVID-19 studies.
+Depends:
+    DatabaseConnector (>= 2.2.0)
+Imports:
+	CohortDiagnostics,
+	ParallelLogger,
+	OhdsiSharing (>= 0.2.0)
+Suggests:
+    knitr,
+    rmarkdown,
+    ROhdsiWebApi,
+    OhdsiRTools
+License: Apache License 2.0
+VignetteBuilder: knitr
+LazyData: TRUE
+RoxygenNote: 7.0.2

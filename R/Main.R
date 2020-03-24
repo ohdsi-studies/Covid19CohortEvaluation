@@ -121,6 +121,7 @@ execute <- function(connectionDetails,
     for (i in 1:nrow(cohortGroups)) {
       ParallelLogger::logInfo("Running cohort diagnostics for cohort group", cohortGroups$cohortGroup[i])
       CohortDiagnostics::runCohortDiagnostics(packageName = "Covid19CohortEvaluation",
+                                              cohortToCreateFile = cohortGroups$fileName[i],
                                               connectionDetails = connectionDetails,
                                               cdmDatabaseSchema = cdmDatabaseSchema,
                                               oracleTempSchema = oracleTempSchema,

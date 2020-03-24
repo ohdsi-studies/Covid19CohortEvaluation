@@ -17,7 +17,8 @@ Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
 # When asked to update packages, select '1' ('update all') (could be multiple times)
 # When asked whether to install from source, select 'No' (could be multiple times)
 install.packages("devtools")
-devtools::install_github("ohdsi/CohortDiagnostics", ref = "develop")
+devtools::install_github("ohdsi/OhdsiSharing")
+devtools::install_github("ohdsi/CohortDiagnostics")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 ```
 

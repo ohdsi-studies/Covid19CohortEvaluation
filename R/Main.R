@@ -100,7 +100,7 @@ execute <- function(connectionDetails,
   
   if (createCohorts) {
     for (i in 1:nrow(cohortGroups)) {
-      ParallelLogger::logInfo("Creating cohorts for cohort group", cohortGroups$cohortGroup[i])
+      ParallelLogger::logInfo("Creating cohorts for cohort group ", cohortGroups$cohortGroup[i])
       CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails,
                                               cdmDatabaseSchema = cdmDatabaseSchema,
                                               cohortDatabaseSchema = cohortDatabaseSchema,

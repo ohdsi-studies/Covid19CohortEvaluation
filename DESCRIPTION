@@ -19,7 +19,7 @@ Suggests:
     OhdsiRTools
 License: Apache License 2.0
 VignetteBuilder: knitr
-URL: https://ohdsi-studies.github.io/CohortDiagnostics, https://github.com/ohdsi-studies/CohortDiagnostics
-BugReports: https://github-studies.com/OHDSI/CohortDiagnostics/issues
+URL: https://ohdsi-studies.github.io/Covid19CohortEvaluation, https://github.com/ohdsi-studies/Covid19CohortEvaluation
+BugReports: https://github.com/ohdsi-studies/Covid19CohortEvaluation/issues
 LazyData: TRUE
 RoxygenNote: 7.0.2

@@ -6,7 +6,8 @@ Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
 # When asked to update packages, select '1' ('update all') (could be multiple times)
 # When asked whether to install from source, select 'No' (could be multiple times)
 install.packages("devtools")
-devtools::install_github("ohdsi/CohortDiagnostics", ref = "develop")
+devtools::install_github("ohdsi/OhdsiSharing")
+devtools::install_github("ohdsi/CohortDiagnostics")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 
 # Running the package -------------------------------------------------------------------------------
@@ -26,7 +27,7 @@ connectionDetails <- createConnectionDetails(dbms = "pdw",
 oracleTempSchema <- NULL
 
 # Details specific to the database:
-outputFolder <- "s:/Covid19CohortEvaluation/mdcd"
+outputFolder <- "s:/Covid19CohortEvaluation/mdcd" # Be sure to have one outputFolder per database!
 cdmDatabaseSchema <- "cdm_ibm_mdcd_v1023.dbo"
 cohortDatabaseSchema <- "scratch.dbo"
 cohortTable <- "mschuemi_skeleton_mdcd"

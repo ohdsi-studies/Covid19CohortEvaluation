@@ -23,13 +23,21 @@ OhdsiRTools::updateCopyrightYearFolder()
 unlink("extras/Covid19CohortEvaluation.pdf")
 shell("R CMD Rd2pdf ./ --output=extras/Covid19CohortEvaluation.pdf")
 
+pkgdown::build_site()
+
+
 # Insert cohort definitions from ATLAS into package -----------------------
-ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/CohortsToCreate.csv",
-                                                 baseUrl = Sys.getenv("baseUrl"),
-                                                 insertTableSql = TRUE,
-                                                 insertCohortCreationR = FALSE,
-                                                 generateStats = FALSE,
-                                                 packageName = "Covid19CohortEvaluation")
+cohortGroups <- read.csv("inst/settings/CohortGroups.csv")
+for (i in 1:nrow(cohortGroups)) {
+  ParallelLogger::logInfo("* Importing cohorts in group: ", cohortGroups$cohortGroup[i], " *")
+  ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = file.path("inst", cohortGroups$fileName[i]),
+                                                   baseUrl = Sys.getenv("baseUrl"),
+                                                   insertTableSql = TRUE,
+                                                   insertCohortCreationR = FALSE,
+                                                   generateStats = TRUE,
+                                                   packageName = "Covid19CohortEvaluation")
+}
+unlink("inst/cohorts/InclusionRules.csv")
 
 # Store environment in which the study was executed -----------------------
 OhdsiRTools::insertEnvironmentSnapshotInPackage("Covid19CohortEvaluation")

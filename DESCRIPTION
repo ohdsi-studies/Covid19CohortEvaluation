@@ -8,9 +8,10 @@ Description: A central package for evaluation the cohorts used in the various CO
 Depends:
     DatabaseConnector (>= 2.2.0)
 Imports:
-	CohortDiagnostics,
+	CohortDiagnostics (>= 0.1.2),
 	ParallelLogger,
-	OhdsiSharing (>= 0.2.0)
+	OhdsiSharing (>= 0.2.0),
+	readr
 Suggests:
     knitr,
     rmarkdown,
@@ -18,5 +19,7 @@ Suggests:
     OhdsiRTools
 License: Apache License 2.0
 VignetteBuilder: knitr
+URL: https://ohdsi-studies.github.io/CohortDiagnostics, https://github.com/ohdsi-studies/CohortDiagnostics
+BugReports: https://github-studies.com/OHDSI/CohortDiagnostics/issues
 LazyData: TRUE
 RoxygenNote: 7.0.2

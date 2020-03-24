@@ -1,0 +1,6 @@
+name,atlasName,atlasId,cohortId
+inpatientOrErVisitsWithIntubationProcedure,Inpatient or ER visits with intubation procedure,14871,14871
+inpatientOrErVisitsWithIntensiveVentilationProcedure,Inpatient or ER visits with intensive ventilation procedure,14870,14870
+inpatientOrErVisitsWithEcmoProcedure,Inpatient or ER visits with ECMO procedure,14869,14869
+episodesOfInfluenza,Episodes of influenza,14865,14865
+episodesOfInfluenzaSymptomsOrComplications,Episodes of influenza symptoms or complications,14864,14864

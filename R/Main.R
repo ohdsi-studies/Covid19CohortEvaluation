@@ -14,6 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+#' Get the list of cohort groups
+#'
+#' @return
+#' A character vector of cohort group names included in this package.
+#' 
+#' @export
+getCohortGroups <- function() {
+  pathToCsv <- system.file("settings", "CohortGroups.csv", package = "Covid19CohortEvaluation")
+  cohortGroups <- readr::read_csv(pathToCsv, col_types = readr::cols())
+  return(cohortGroups$cohortGroup)
+}
+
 #' Execute the main cohort evaluation
 #'
 #' @details
@@ -41,24 +54,27 @@
 #' @param databaseName         The full name of the database (e.g. 'Medicare Claims
 #'                             Synthetic Public Use Files (SynPUFs)').
 #' @param databaseDescription  A short description (several sentences) of the database.
+#' @param cohortGroups         A character vector indicating which cohort groups to evaluate. See 
+#'                             \code{getCohortGroups()} for options.
 #' @param createCohorts        Create the cohortTable table with the exposure and outcome cohorts?
 #' @param runCohortDiagnostics Run the various cohort diagnostics?
 #' @param minCellCount         The minimum number of subjects contributing to a count before it can be included 
 #'                             in packaged results.
 #'
 #' @export
-runCohortDiagnostics <- function(connectionDetails,
-                                 cdmDatabaseSchema,
-                                 cohortDatabaseSchema = cdmDatabaseSchema,
-                                 cohortTable = "cohort",
-                                 oracleTempSchema = cohortDatabaseSchema,
-                                 outputFolder,
-                                 databaseId = "Unknown",
-                                 databaseName = "Unknown",
-                                 databaseDescription = "Unknown",
-                                 createCohorts = TRUE,
-                                 runCohortDiagnostics = TRUE,
-                                 minCellCount = 5) {
+execute <- function(connectionDetails,
+                    cdmDatabaseSchema,
+                    cohortDatabaseSchema = cdmDatabaseSchema,
+                    cohortTable = "cohort",
+                    oracleTempSchema = cohortDatabaseSchema,
+                    outputFolder,
+                    databaseId = "Unknown",
+                    databaseName = "Unknown",
+                    databaseDescription = "Unknown",
+                    cohortGroups = getCohortGroups(),
+                    createCohorts = TRUE,
+                    runCohortDiagnostics = TRUE,
+                    minCellCount = 5) {
   if (!file.exists(outputFolder)) {
     dir.create(outputFolder, recursive = TRUE)
   }
@@ -66,41 +82,77 @@ runCohortDiagnostics <- function(connectionDetails,
     warning("fftempdir '", getOption("fftempdir"), "' not found. Attempting to create folder")
     dir.create(getOption("fftempdir"), recursive = TRUE)
   }
-  
   ParallelLogger::addDefaultFileLogger(file.path(outputFolder, "cohortDiagnosticsLog.txt"))
   on.exit(ParallelLogger::unregisterLogger("DEFAULT"))
   
+  pathToCsv <- system.file("settings", "CohortGroups.csv", package = "Covid19CohortEvaluation")
+  temp <- readr::read_csv(pathToCsv, col_types = readr::cols())
+  cohortGroups <- temp[temp$cohortGroup %in% cohortGroups, ]
+  rm(temp)
+  if (nrow(cohortGroups) == 0) {
+    stop("No valid cohort groups seleted") 
+  }
+  cohortGroups$outputFolder <- file.path(outputFolder, cohortGroups$cohortGroup)
+  lapply(cohortGroups$outputFolder[!file.exists(cohortGroups$outputFolder)], dir.create, recursive = TRUE)
+  cohortGroups$incrementalFolder <- file.path(cohortGroups$outputFolder, "RecordKeeping")
+  cohortGroups$inclusionStatisticsFolder <- file.path(cohortGroups$outputFolder, "InclusionStatistics")
+  cohortGroups$exportFolder <- file.path(cohortGroups$outputFolder, "Export")
+  
   if (createCohorts) {
-    ParallelLogger::logInfo("Creating cohorts")
-    createCohorts(connection = connectionDetails,
-                  cdmDatabaseSchema = cdmDatabaseSchema,
-                  cohortDatabaseSchema = cohortDatabaseSchema,
-                  cohortTable = cohortTable,
-                  oracleTempSchema = oracleTempSchema,
-                  outputFolder = outputFolder)
+    for (i in 1:nrow(cohortGroups)) {
+      ParallelLogger::logInfo("Creating cohorts for cohort group", cohortGroups$cohortGroup[i])
+      CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails,
+                                              cdmDatabaseSchema = cdmDatabaseSchema,
+                                              cohortDatabaseSchema = cohortDatabaseSchema,
+                                              cohortTable = cohortTable,
+                                              oracleTempSchema = oracleTempSchema,
+                                              packageName = "Covid19CohortEvaluation",
+                                              cohortToCreateFile = cohortGroups$fileName[i],
+                                              createCohortTable = TRUE,
+                                              generateInclusionStats = TRUE,
+                                              inclusionStatisticsFolder = cohortGroups$inclusionStatisticsFolder[i],
+                                              incremental = TRUE,
+                                              incrementalFolder = cohortGroups$incrementalFolder[i])
+      
+    }
   }
   
   if (runCohortDiagnostics) {
-    ParallelLogger::logInfo("Running study diagnostics")
-    CohortDiagnostics::runCohortDiagnostics(packageName = "Covid19CohortEvaluation",
-                                            connectionDetails = connectionDetails,
-                                            cdmDatabaseSchema = cdmDatabaseSchema,
-                                            oracleTempSchema = oracleTempSchema,
-                                            cohortDatabaseSchema = cohortDatabaseSchema,
-                                            cohortTable = cohortTable,
-                                            inclusionStatisticsFolder = outputFolder,
-                                            exportFolder = file.path(outputFolder, "diagnosticsExport"),
-                                            databaseId = databaseId,
-                                            databaseName = databaseName,
-                                            databaseDescription = databaseDescription,
-                                            runInclusionStatistics = TRUE,
-                                            runIncludedSourceConcepts = FALSE,
-                                            runOrphanConcepts = FALSE,
-                                            runTimeDistributions = TRUE,
-                                            runBreakdownIndexEvents = TRUE,
-                                            runIncidenceRate = TRUE,
-                                            runCohortOverlap = TRUE,
-                                            runCohortCharacterization = TRUE,
-                                            minCellCount = minCellCount)
+    for (i in 1:nrow(cohortGroups)) {
+      ParallelLogger::logInfo("Running cohort diagnostics for cohort group", cohortGroups$cohortGroup[i])
+      CohortDiagnostics::runCohortDiagnostics(packageName = "Covid19CohortEvaluation",
+                                              connectionDetails = connectionDetails,
+                                              cdmDatabaseSchema = cdmDatabaseSchema,
+                                              oracleTempSchema = oracleTempSchema,
+                                              cohortDatabaseSchema = cohortDatabaseSchema,
+                                              cohortTable = cohortTable,
+                                              inclusionStatisticsFolder = cohortGroups$inclusionStatisticsFolder[i],
+                                              exportFolder = cohortGroups$exportFolder[i],
+                                              databaseId = databaseId,
+                                              databaseName = databaseName,
+                                              databaseDescription = databaseDescription,
+                                              runInclusionStatistics = TRUE,
+                                              runIncludedSourceConcepts = FALSE,
+                                              runOrphanConcepts = FALSE,
+                                              runTimeDistributions = TRUE,
+                                              runBreakdownIndexEvents = TRUE,
+                                              runIncidenceRate = TRUE,
+                                              runCohortOverlap = TRUE,
+                                              runCohortCharacterization = TRUE,
+                                              minCellCount = minCellCount,
+                                              incremental = TRUE,
+                                              incrementalFolder = cohortGroups$incrementalFolder[i])
+    }
   }
+  
+  # Combine zip files -------------------------------------------------------------------------------
+  ParallelLogger::logInfo("Combining zip files")
+  zipName <- file.path(outputFolder, paste0("AllResults_", databaseId, ".zip"))
+  files <- list.files(cohortGroups$exportFolder, pattern = ".*\\.zip$", full.names = TRUE)
+  oldWd <- setwd(outputFolder)
+  on.exit(setwd(oldWd), add = TRUE)
+  DatabaseConnector::createZipFile(zipFile = zipName, files = files)
+  ParallelLogger::logInfo("Results are ready for sharing at:", zipName)
+  
+  ParallelLogger::logFatal("Done")
 }

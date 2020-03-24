@@ -14,4 +14,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# TODO: add function for upload results to SFTP server
+#' Upload results to OHDSI server
+#' 
+#' @details 
+#' This function uploads the 'AllResults_<databaseId>.zip' to the OHDSI SFTP server. Before sending, you can inspect the zip file,
+#' wich contains (zipped) CSV files. You can send the zip file from a different computer than the one on which is was created.
+#' 
+#' @param privateKeyFileName   A character string denoting the path to the RSA private key provided by the study coordinator.
+#' @param userName             A character string containing the user name provided by the study coordinator.
+#' @param outputFolder         Name of local folder to place results; make sure to use forward slashes
+#'                             (/). Do not use a folder on a network drive since this greatly impacts
+#'                             performance.
+#'                             
+#' @export
+uploadResults <- function(outputFolder, privateKeyFileName, userName) {
+  fileName <- list.files(outputFolder, "^AllResults_.*.zip$")
+  if (length(fileName) == 0) {
+    stop("Could find results file in folder. Did you run (and complete) execute?") 
+  }
+  if (length(fileName) == 0) {
+    stop("Multiple results files found. Don't know which one to upload") 
+  }
+  OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName, 
+                               userName = userName,
+                               fileName = fileName)
+  ParallelLogger::logInfo("Finishe uploading")
+}

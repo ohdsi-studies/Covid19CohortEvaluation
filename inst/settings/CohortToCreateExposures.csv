@@ -1,0 +1,17 @@
+name,atlasName,atlasId,cohortId
+sulfasazine,New users of sulfasazine with prior rheumatoid arthritis,14816,14816
+tocilizumab,New users of tocilizumab with prior rheumatoid arthritis,14815,14815
+adalimumab,New users of adalimumab with prior rheumatoid arthritis,14872,14872
+sarilumab,New users of sarilumab with prior rheumatoid arthritis,14814,14814
+baricitinib,New users of Baricitinib with prior rheumatoid arthritis,14819,14819
+navirProteaseInhibitors,New users of -navir protease inhibitors with prior HIV,14822,14822
+integraseInhibitor,New users of Integrase inhibitor with prior HIV,14834,14834
+nonNucleosideReverseTranscriptaseInhibitors,New users of Non-nucleoside reverse-transcriptase inhibitors (NNRTIs) with prior HIV,14825,14825
+lopinavirMonotherapy,New users of lopinavir monotherapy with prior HIV,14823,14823
+ritonavirMonotherapy,New users of ritonavir monotherapy with prior HIV,14820,14820
+hepatisCProteaseInhibitors,New users of hepatis C protease inhibitors with prior hepatitis C,14840,14840
+peginterferonAlfa2bMonotherapy,New users of peginterferon alfa-2b monotherapy with prior hepatitis C,14860,14860
+ribavirinMonotherapy,New users of ribavirin monotherapy with prior hepatitis C,14859,14859
+boceprevirMonotherapy,New users of boceprevir monotherapy with prior hepatitis C,14841,14841
+hydroxychloroquine,New users of Hydroxychloroquine with prior rheumatoid arthritis,14818,14818
+methotrexate,New users of methotrexate with prior rheumatoid arthritis,14817,14817

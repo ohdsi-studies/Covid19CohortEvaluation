@@ -8,12 +8,17 @@ A central package for evaluation the cohorts used in the various COVID-19 studie
 
 Installation
 =============
-To install the latest development version:
+To install, in R type:
 
 ```r
+install.packages("drat")
 install.packages("devtools")
+drat::addRepo("OHDSI")
+install.packages("CohortDiagnostics")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 ```
+
+See 'extras/CodeToRun.R' for instructions on how to run.
 
 User Documentation
 ==================

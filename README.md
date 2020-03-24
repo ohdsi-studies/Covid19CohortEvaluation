@@ -11,10 +11,13 @@ Installation
 To install, in R type:
 
 ```r
-install.packages("drat")
+# Prevents errors due to packages being built for other R versions: 
+Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
+
+# When asked to update packages, select '1' ('update all') (could be multiple times)
+# When asked whether to install from source, select 'No' (could be multiple times)
 install.packages("devtools")
-drat::addRepo("OHDSI")
-install.packages("CohortDiagnostics")
+devtools::install_github("ohdsi/CohortDiagnostics", ref = "develop")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 ```
 

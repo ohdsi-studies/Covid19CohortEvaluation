@@ -1,12 +1,15 @@
-# Make sure to install all dependencies (not needed if already done):
-install.packages("drat")
-drat::addRepo("OHDSI")
-install.packages("CohortDiagnostics")
+# Make sure to install all dependencies (not needed if already done) -------------------------------
+
+# Prevents errors due to packages being built for other R versions: 
+Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
+
+# When asked to update packages, select '1' ('update all') (could be multiple times)
+# When asked whether to install from source, select 'No' (could be multiple times)
 install.packages("devtools")
+devtools::install_github("ohdsi/CohortDiagnostics", ref = "develop")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 
-
-# Load the package
+# Running the package -------------------------------------------------------------------------------
 library(Covid19CohortEvaluation)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
@@ -38,9 +41,9 @@ data. [For further information link to RWE site for Truven MDCD."
 
 # Use this to run the evaluations. The results will be stored in a zip file called 
 # 'AllResults_<databaseId>.zip in the outputFolder. This can be shared between sites.
-execute(connectionDetails,
-        cdmDatabaseSchema,
-        cohortDatabaseSchema = cdmDatabaseSchema,
+execute(connectionDetails = connectionDetails,
+        cdmDatabaseSchema = cdmDatabaseSchema,
+        cohortDatabaseSchema = cohortDatabaseSchema,
         cohortTable = cohortTable,
         oracleTempSchema = cohortDatabaseSchema,
         outputFolder = outputFolder,

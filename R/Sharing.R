@@ -28,7 +28,7 @@
 #'                             
 #' @export
 uploadResults <- function(outputFolder, privateKeyFileName, userName) {
-  fileName <- list.files(outputFolder, "^AllResults_.*.zip$")
+  fileName <- list.files(outputFolder, "^AllResults_.*.zip$", full.names = TRUE)
   if (length(fileName) == 0) {
     stop("Could find results file in folder. Did you run (and complete) execute?") 
   }

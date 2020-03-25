@@ -6,8 +6,6 @@ Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
 # When asked to update packages, select '1' ('update all') (could be multiple times)
 # When asked whether to install from source, select 'No' (could be multiple times)
 install.packages("devtools")
-devtools::install_github("ohdsi/OhdsiSharing")
-devtools::install_github("ohdsi/CohortDiagnostics")
 devtools::install_github("ohdsi-studies/Covid19CohortEvaluation")
 
 # Running the package -------------------------------------------------------------------------------
@@ -40,8 +38,12 @@ pharmacy claims as well as ethnicity and Medicare eligibility. Members maintain 
 identifier even if they leave the system for a brief period however the dataset lacks lab 
 data. [For further information link to RWE site for Truven MDCD."
 
+# For uploading the results. You should have received the key file from the study coordinator:
+keyFileName <- "c:/home/keyFiles/study-data-site-covid19.dat"
+userName <- "study-data-site-covid19"
+
 # Use this to run the evaluations. The results will be stored in a zip file called 
-# 'AllResults_<databaseId>.zip in the outputFolder. This can be shared between sites.
+# 'AllResults_<databaseId>.zip in the outputFolder. 
 execute(connectionDetails = connectionDetails,
         cdmDatabaseSchema = cdmDatabaseSchema,
         cohortDatabaseSchema = cohortDatabaseSchema,
@@ -56,4 +58,5 @@ execute(connectionDetails = connectionDetails,
         runCohortDiagnostics = TRUE,
         minCellCount = 5) 
 
-
+# Upload results to OHDSI SFTP server:
+uploadResults(outputFolder, keyFileName, userName)

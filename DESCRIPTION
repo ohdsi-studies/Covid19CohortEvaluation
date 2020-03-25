@@ -10,13 +10,14 @@ Depends:
 Imports:
 	CohortDiagnostics (>= 0.1.2),
 	ParallelLogger,
-	OhdsiSharing (>= 0.2.0),
+	OhdsiSharing (>= 0.2.1),
 	readr
 Suggests:
     knitr,
-    rmarkdown,
-    ROhdsiWebApi,
-    OhdsiRTools
+    rmarkdown
+Remotes:
+    ohdsi/CohortDiagnostics,
+    ohdsi/OhdsiSharing
 License: Apache License 2.0
 VignetteBuilder: knitr
 URL: https://ohdsi-studies.github.io/Covid19CohortEvaluation, https://github.com/ohdsi-studies/Covid19CohortEvaluation

@@ -37,6 +37,7 @@ uploadResults <- function(outputFolder, privateKeyFileName, userName) {
   }
   OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName, 
                                userName = userName,
+                               remoteFolder = "cohortEvaluation",
                                fileName = fileName)
   ParallelLogger::logInfo("Finishe uploading")
 }

@@ -47,6 +47,10 @@ data. [For further information link to RWE site for Truven MDCD."
 keyFileName <- "c:/home/keyFiles/study-data-site-covid19.dat"
 userName <- "study-data-site-covid19"
 
+# Selecting the cohort groups to run:
+# cohortGroups <- c("Exposures", "SafetyOutcomes", "EfficacyOutcomes")
+cohortGroups <- c("SafetyOutcomes", "EfficacyOutcomes") # Prioritizing outcomes for now
+
 # Use this to run the evaluations. The results will be stored in a zip file called 
 # 'AllResults_<databaseId>.zip in the outputFolder. 
 execute(connectionDetails = connectionDetails,
@@ -58,7 +62,7 @@ execute(connectionDetails = connectionDetails,
         databaseId = databaseId,
         databaseName = databaseName,
         databaseDescription = databaseDescription,
-        cohortGroups = getCohortGroups(),
+        cohortGroups = cohortGroups,
         createCohorts = TRUE,
         runCohortDiagnostics = TRUE,
         minCellCount = 5) 

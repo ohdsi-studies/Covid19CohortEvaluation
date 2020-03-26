@@ -39,5 +39,5 @@ uploadResults <- function(outputFolder, privateKeyFileName, userName) {
                                userName = userName,
                                remoteFolder = "cohortEvaluation",
                                fileName = fileName)
-  ParallelLogger::logInfo("Finishe uploading")
+  ParallelLogger::logInfo("Finished uploading")
 }

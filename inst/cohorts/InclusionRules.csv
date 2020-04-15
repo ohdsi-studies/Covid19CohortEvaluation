@@ -1,0 +1,112 @@
+"cohortName","ruleSequence","ruleName","cohortId"
+"GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",0,"age >=18",15641
+"GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",1,"has >=365d of prior observation",15641
+"GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",2,"no symptoms or pneumonia in the last 60d",15641
+"GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",4,"no Covid diagnosis or test in the last 60d",15641
+"GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",3,"no influenza in the last 60d",15641
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D",0,"age >=18",15626
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D",1,"has >=365d of prior observation",15626
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D",3,"no influenza in the last 60d",15626
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D",4,"no Covid diagnosis or test in the last 60d",15626
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D",2,"no symptoms or pneumonia in the last 60d",15626
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season",0,"age >=18",15632
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season",1,"has >=365d of prior observation",15632
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season",3,"no influenza in the last 60d",15632
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season",4,"no Covid diagnosis or test in the last 60d",15632
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season",2,"no symptoms or pneumonia in the last 60d",15632
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season",0,"age >=18",15635
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season",2,"no symptoms or pneumonia in the last 60d",15635
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season",3,"no influenza in the last 60d",15635
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season",4,"no Covid diagnosis or test in the last 60d",15635
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season",1,"has >=365d of prior observation",15635
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season",1,"has >=365d of prior observation",15629
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season",2,"no symptoms or pneumonia in the last 60d",15629
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season",3,"no influenza in the last 60d",15629
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season",4,"no Covid diagnosis or test in the last 60d",15629
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season",0,"age >=18",15629
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",0,"age >=18",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",2,"no symptoms or pneumonia in the last 60d",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",3,"no influenza in the last 60d",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",4,"no Covid diagnosis or test in the last 60d",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",1,"has >=365d of prior observation",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",6,"does not have inpatient admission on same or next day",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission",5,"has no pneumonia on index",15628
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",0,"age >=18",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",1,"has >=365d of prior observation",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",3,"no influenza in the last 60d",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",4,"no Covid diagnosis or test in the last 60d",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",5,"has no pneumonia on index",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",6,"does not have inpatient admission on same or next day",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season",2,"no symptoms or pneumonia in the last 60d",15634
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",1,"has >=365d of prior observation",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",2,"no symptoms or pneumonia in the last 60d",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",3,"no influenza in the last 60d",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",0,"age >=18",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",5,"has no pneumonia on index",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",6,"does not have inpatient admission on same or next day",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season",4,"no Covid diagnosis or test in the last 60d",15631
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",0,"age >=18",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",2,"no symptoms or pneumonia in the last 60d",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",3,"no influenza in the last 60d",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",4,"no Covid diagnosis or test in the last 60d",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",5,"has pneumonia on index",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",6,"does not have inpatient admission on same or next day",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission",1,"has >=365d of prior observation",15627
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",0,"age >=18",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",1,"has >=365d of prior observation",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",2,"no symptoms or pneumonia in the last 60d",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",4,"no Covid diagnosis or test in the last 60d",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",5,"has pneumonia on index",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",6,"does not have inpatient admission on same or next day",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season",3,"no influenza in the last 60d",15633
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",1,"has >=365d of prior observation",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",2,"no symptoms or pneumonia in the last 60d",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",3,"no influenza in the last 60d",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",4,"no Covid diagnosis or test in the last 60d",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",5,"has pneumonia on index",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",6,"does not have inpatient admission on same or next day",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season",0,"age >=18",15630
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",0,"age >=18",15640
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",1,"has >=365d of prior observation",15640
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",2,"no symptoms or pneumonia in the last 60d",15640
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",4,"no Covid diagnosis or test in the last 60d",15640
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D",3,"no influenza in the last 60d",15640
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",0,"age >=18",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",1,"has >=365d of prior observation",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",3,"no influenza in the last 60d",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",4,"no Covid diagnosis or test in the last 60d",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",5,"has no pneumonia on index",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",6,"does not have inpatient admission on same or next day",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza",2,"no symptoms or pneumonia in the last 60d",15644
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",1,"has >=365d of prior observation",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",2,"no symptoms or pneumonia in the last 60d",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",3,"no influenza in the last 60d",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",0,"age >=18",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",5,"has pneumonia on index",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",6,"does not have inpatient admission on same or next day",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza",4,"no Covid diagnosis or test in the last 60d",15642
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",0,"age >=18",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",2,"no symptoms or pneumonia in the last 60d",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",3,"no influenza in the last 60d",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",4,"no Covid diagnosis or test in the last 60d",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",5,"has no pneumonia on index",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",6,"does not have inpatient admission on same or next day",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza",1,"has >=365d of prior observation",15645
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",0,"age >=18",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",1,"has >=365d of prior observation",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",2,"no symptoms or pneumonia in the last 60d",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",4,"no Covid diagnosis or test in the last 60d",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",5,"has pneumonia on index",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",6,"does not have inpatient admission on same or next day",15643
+"GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza",3,"no influenza in the last 60d",15643
+"HospitalizationsWithCovidRequiringIntensiveServices",0,"age >=18",15649
+"HospitalizationsWithCovidRequiringIntensiveServices",1,"has >=365d of prior observation",15649
+"HospitalizationsWithCovidRequiringIntensiveServices",2,"does not have hospitalization for COVID19 in the 6 months preceding admission",15649
+"HospitalizationsWithCovidRequiringIntensiveServices",3,"has mechanical ventilation or tracheostomy or ECMO",15649
+"HospitalizationsWithPneumoniaAge18AndNoInfluenza",0,"no influenza in the last 60d or during hospitalization",15646
+"HospitalizationsWithPneumoniaAge18AndNoInfluenzaAndCovid",0,"no influenza in the last 60d or during hospitalization",15647
+"HospitalizationsWithPneumoniaAge18AndNoInfluenzaAndCovid",1,"COVID diagnosis or positive test in last 60d or during hospitalization",15647
+"HospitalizationsWithPneumoniaAndArdsRequiringIntensiveServices",0,"age 18 or greater",15648
+"HospitalizationsWithPneumoniaAndArdsRequiringIntensiveServices",1,"has mechanical ventilation or tracheostomy or ECMO",15648
+"HospitalizationsWithPneumoniaAndArdsRequiringIntensiveServices",2,"no prior death",15648
+"HospitalizationsWithPneumoniaOrArdsOrSepsisOrAkiRequiringIntensiveServicesOrResultingInDeathIn30D",0,"has mechanical ventilation or tracheostomy or ECMO or has death in 30d",15638

@@ -5,7 +5,11 @@
       {
         "VisitOccurrence": {
           "CodesetId": 1,
-          "VisitTypeExclude": false
+          "VisitTypeExclude": false,
+          "Age": {
+            "Value": 18,
+            "Op": "gte"
+          }
         }
       }
     ],

@@ -1,0 +1,27 @@
+name,atlasName,atlasId,cohortId
+PersonsWhoDie, persons who die,15652,15652
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D, GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms AND no symptoms or pneumonia in prior 60d,15626,15626
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission, GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with pneumonia and no admission,15627,15627
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission, GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with no pneumonia and no admission,15628,15628
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60DIn20092010Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms AND no symptoms or pneumonia in prior 60d, in 2009-2010 season",15629,15629
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmissionIn20092010Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with pneumonia and no admission, in 2009-2010 season",15630,15630
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionIn20092010Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with no pneumonia and no admission, in 2009-2010 season",15631,15631
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20142019Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms AND no symptoms or pneumonia in prior 60d, 2014-2019 season",15632,15632
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithPneumoniaAndNoAdmission20142019Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with pneumonia and no admission, 2014-2019 season",15633,15633
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsWithNoPneumoniaAndNoAdmission20142019Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms with no pneumonia and no admission, 2014-2019 season",15634,15634
+GpOpErVisitsOfPatientsPresentingWithCovidFluOrFluLikeSymptomsAndNoSymptomsOrPneumoniaInPrior60D20192020Season," GP/OP/ER visits of patients presenting with Covid flu or flu-like symptoms AND no symptoms or pneumonia in prior 60d, 2019-2020 season",15635,15635
+HospitalizationsWithPneumonia, Hospitalizations with pneumonia,15636,15636
+HospitalizationsWithPneumoniaOrArdsOrSepsisOrAki, Hospitalizations with pneumonia or ARDS or sepsis or AKI,15637,15637
+HospitalizationsWithPneumoniaOrArdsOrSepsisOrAkiRequiringIntensiveServicesOrResultingInDeathIn30D, Hospitalizations with pneumonia or ARDS or sepsis or AKI requiring intensive services or resulting in death in 30d,15638,15638
+HospitalizationsWithPneumoniaAge18," Hospitalizations with pneumonia, age>=18",15639,15639
+GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D, GP/OP/ER visits of patients presenting with Covid or flu-like symptoms AND no influenza AND no symptoms or pneumonia in prior 60d,15640,15640
+GpOpErVisitsOfPatientsPresentingWithCovidAndNoInfluenzaAndNoSymptomsOrPneumoniaInPrior60D, GP/OP/ER visits of patients presenting with Covid AND no influenza AND no symptoms or pneumonia in prior 60d,15641,15641
+GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithPneumoniaAndNoAdmissionAndNoInfluenza, GP/OP/ER visits of patients presenting with Covid or flu-like symptoms with pneumonia and no admission AND no influenza,15642,15642
+GpOpErVisitsOfPatientsPresentingWithCovidWithPneumoniaAndNoAdmissionAndNoInfluenza, GP/OP/ER visits of patients presenting with Covid with pneumonia and no admission AND no influenza,15643,15643
+GpOpErVisitsOfPatientsPresentingWithCovidOrFluLikeSymptomsWithNoPneumoniaAndNoAdmissionAndNoInfluenza, GP/OP/ER visits of patients presenting with Covid or flu-like symptoms with no pneumonia and no admission AND no influenza,15644,15644
+GpOpErVisitsOfPatientsPresentingWithCovidWithNoPneumoniaAndNoAdmissionAndNoInfluenza, GP/OP/ER visits of patients presenting with Covid with no pneumonia and no admission AND no influenza,15645,15645
+HospitalizationsWithPneumoniaAge18AndNoInfluenza," Hospitalizations with pneumonia, age>=18 AND no influenza",15646,15646
+HospitalizationsWithPneumoniaAge18AndNoInfluenzaAndCovid," Hospitalizations with pneumonia, age>=18 AND no influenza AND Covid",15647,15647
+HospitalizationsWithPneumoniaAndArdsRequiringIntensiveServices, Hospitalizations with pneumonia AND ARDS requiring intensive services,15648,15648
+HospitalizationsWithCovidRequiringIntensiveServices, Hospitalizations with COVID requiring intensive services,15649,15649
+EpisodesOfCovid19Narrow," Episodes of COVID-19, narrow",15695,15695

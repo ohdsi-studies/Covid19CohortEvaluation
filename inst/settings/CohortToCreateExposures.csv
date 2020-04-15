@@ -15,3 +15,37 @@ ribavirinMonotherapy,New users of ribavirin monotherapy with prior hepatitis C,1
 boceprevirMonotherapy,New users of boceprevir monotherapy with prior hepatitis C,14841,14841
 hydroxychloroquine,New users of Hydroxychloroquine with prior rheumatoid arthritis,14818,14818
 methotrexate,New users of methotrexate with prior rheumatoid arthritis,14817,14817
+PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension," Prevalent users of thiazide/thiazide-like diuretics (monotherapy), with hypertension",5653,5653
+PrevalentUsersOfDccb(Monotherapy)WithHypertension," Prevalent users of dCCB (monotherapy), with hypertension",15654,15654
+PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithHypertension," Prevalent users of ACE inhibitors or ARBs (monotherapy), with hypertension",15655,15655
+PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithHypertension," Prevalent users of ACE inhibitors (including non-monotherapy), with hypertension",15656,15656
+PrevalentUsersOfArbs(IncludingNonMonotherapy)WithHypertension," Prevalent users of ARBs (including non-monotherapy), with hypertension",15657,15657
+PrevalentUsersOfThiazideThiazideLikeDiuretics(IncludingNonMonotherapy)WithHypertension," Prevalent users of thiazide/thiazide-like diuretics (including non-monotherapy), with hypertension",15658,15658
+PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithHypertension," Prevalent users of dCCBs (including non-monotherapy), with hypertension",15659,15659
+PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithHypertension," Prevalent users of ACE inhibitors or ARBs (including non-monotherapy), with hypertension",15660,15660
+PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension," Prevalent users of ACE inhibitor (monotherapy), with hypertension",15661,15661
+PrevalentUsersOfArb(Monotherapy)WithHypertension," Prevalent users of ARB (monotherapy), with hypertension",15662,15662
+PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension," Prevalent users of dCCBs (monotherapy) with COVID-19, history of hypertension",15669,15669
+PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension," Prevalent users of thiazide/thiazide-like diuretics (monotherapy) with COVID-19, history of hypertension",15670,15670
+PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors or ARBs (monotherapy) with COVID-19, history of hypertension",15671,15671
+PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors (including non-monotherapy) with COVID-19, history of hypertension",15672,15672
+PrevalentUsersOfArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ARBs (including non-monotherapy) with COVID-19, history of hypertension",15673,15673
+PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension," Prevalent users of dCCBs (including non-monotherapy) with COVID-19, history of hypertension",15674,15674
+PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension," Prevalent users of thiazide/thiazide-like duretics (including non-monotherapy) with COVID-19, history of hypertension",15675,15675
+PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors or ARBs (including non-monotherapy) with COVID-19, history of hypertension",15676,15676
+PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ARBs (monotherapy) with COVID-19, history of hypertension",15677,15677
+PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors (including non-monotherapy), hospitalized with COVID-19, history of hypertension",15678,15678
+PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ARBs (including non-monotherapy), hospitalized with COVID-19, history of hypertension",15679,15679
+PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of thiazide/thiazide-like duretics (including non-monotherapy), hospitalized with COVID-19, history of hypertension",15680,15680
+PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of dCCBs (including non-monotherapy), hospitalized with COVID-19, history of hypertension",15681,15681
+PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors or ARBs (including non-monotherapy), hospitalized with COVID-19, history of hypertension",15682,15682
+PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors (monotherapy), hospitalized with COVID-19, history of hypertension",15683,15683
+PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ARBs (monotherapy), hospitalized with COVID-19, history of hypertension",15684,15684
+PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of dCCBs (monotherapy), hospitalized with COVID-19, history of hypertension",15685,15685
+PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of thiazide/thiazide-like duretics (monotherapy), hospitalized with COVID-19, history of hypertension",15686,15686
+PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors or ARBs (monotherapy), hospitalized with COVID-19, history of hypertension",15687,15687
+PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension," Prevalent users of ACE inhibitors (monotherapy) with COVID-19, history of hypertension",15688,15688
+UsersOfHydroxychloroquine+Azithromycin, Users of Hydroxychloroquine + Azithromycin,15690,15690
+UsersOfHydroxychloroquine+Amoxicillin, Users of Hydroxychloroquine + Amoxicillin,15691,15691
+NewUsersOfHydroxychloroquineWithPriorRheumatoidArthritis, New users of Hydroxychloroquine with prior rheumatoid arthritis,15693,15693
+NewUsersOfSulfasazineWithPriorRheumatoidArthritis, New users of sulfasazine with prior rheumatoid arthritis,15694,15694

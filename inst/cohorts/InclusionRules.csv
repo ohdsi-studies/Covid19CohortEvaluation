@@ -29,3 +29,156 @@
 "personsHospitalizedWithInfluenzaNarrowWPriorObservation20092010Season",0,"age >=18",15144
 "personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons",0,"age >=18",15146
 "personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons",1,"does not have hospitalization for influenza in the 6 months preceding admission",15146
+"NewUsersOfHydroxychloroquineWithPriorRheumatoidArthritis",0,"has rheumatoid arthritis recorded any time on or prior to treatment",15693
+"NewUsersOfSulfasazineWithPriorRheumatoidArthritis",0,"has rheumatoid arthritis recorded any time on or prior to treatment",15694
+"PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension",0,"Age >= 18 years old",15661
+"PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension",1,"has >=180d of prior observation",15661
+"PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15661
+"PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension",3,"No exposure to other antihypertensives in the 180 days before start date",15661
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15678
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15678
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15678
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15678
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15678
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15672
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15672
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15672
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15672
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithHypertension",0,"Age >= 18 years old",15656
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithHypertension",1,"has >=180d of prior observation",15656
+"PrevalentUsersOfAceInhibitors(IncludingNonMonotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15656
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",5,"No exposure to any other antihypertensives within 180 days before start-date",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15683
+"PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15688
+"PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15688
+"PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15688
+"PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension",4,"No exposure to any other antihypertensives within 180 days before start-date",15688
+"PrevalentUsersOfAceInhibitors(Monotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15688
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15682
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15682
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15682
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15682
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15682
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15676
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15676
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15676
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15676
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithHypertension",0,"Age >= 18 years old",15660
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15660
+"PrevalentUsersOfAceInhibitorsOrArbs(IncludingNonMonotherapy)WithHypertension",1,"has >=180d of prior observation",15660
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",5,"No exposure to any other antihypertensives within 180 days before start-date",15687
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15671
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15671
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15671
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension",4,"No exposure to any other antihypertensives within 180 days before start-date",15671
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15671
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithHypertension",1,"has >=180d of prior observation",15655
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15655
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithHypertension",3,"No exposure to other antihypertensives in the 180 days before start date",15655
+"PrevalentUsersOfAceInhibitorsOrArbs(Monotherapy)WithHypertension",0,"Age >= 18 years old",15655
+"PrevalentUsersOfArb(Monotherapy)WithHypertension",0,"Age >= 18 years old",15662
+"PrevalentUsersOfArb(Monotherapy)WithHypertension",1,"has >=180d of prior observation",15662
+"PrevalentUsersOfArb(Monotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15662
+"PrevalentUsersOfArb(Monotherapy)WithHypertension",3,"No exposure to other antihypertensives in the 180 days before start date",15662
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15679
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15679
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15679
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15679
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15679
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15673
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15673
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15673
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15673
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithHypertension",0,"Age >= 18 years old",15657
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithHypertension",1,"has >=180d of prior observation",15657
+"PrevalentUsersOfArbs(IncludingNonMonotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15657
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15684
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15684
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15684
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15684
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",5,"No exposure to any other antihypertensives within 180 days before start-date",15684
+"PrevalentUsersOfArbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15684
+"PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15677
+"PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15677
+"PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15677
+"PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension",4,"No exposure to any other antihypertensives within 180 days before start-date",15677
+"PrevalentUsersOfArbs(Monotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15677
+"PrevalentUsersOfDccb(Monotherapy)WithHypertension",0,"Age >= 18 years old",15654
+"PrevalentUsersOfDccb(Monotherapy)WithHypertension",1,"has >=180d of prior observation",15654
+"PrevalentUsersOfDccb(Monotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15654
+"PrevalentUsersOfDccb(Monotherapy)WithHypertension",3,"No exposure to other antihypertensives in the 180 days before start date",15654
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15681
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15681
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15681
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15681
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15681
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15674
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15674
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15674
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15674
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithHypertension",0,"Age >= 18 years old",15659
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithHypertension",1,"has >=180d of prior observation",15659
+"PrevalentUsersOfDccbs(IncludingNonMonotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15659
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",5,"No exposure to any other antihypertensives within 180 days before start-date",15685
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15685
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15685
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15685
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15685
+"PrevalentUsersOfDccbs(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15685
+"PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15669
+"PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15669
+"PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15669
+"PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15669
+"PrevalentUsersOfDccbs(Monotherapy)WithCovid19HistoryOfHypertension",4,"No exposure to any other antihypertensives within 180 days before start-date",15669
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(IncludingNonMonotherapy)WithHypertension",2,"Hypertension diagnosis anytime before (and including) start-date",15658
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(IncludingNonMonotherapy)WithHypertension",0,"Age >= 18 years old",15658
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(IncludingNonMonotherapy)WithHypertension",1,"has >=180d of prior observation",15658
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15670
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15670
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15670
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension",4,"No exposure to any other antihypertensives within 180 days before start-date",15670
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15670
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",0,"Cardiovascular Disease",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",2,"No diagnosis of malignancy, cardiomyopathy, cirrhosis, or chronic lung disease",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",3,"No DDP-4 or GLP-1 use",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",4,"No acute cardiac or stroke event ",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",1,"No pregnant women ",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",10,"No HbA1c >= 12% in last six months",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",11,"Two BP readings in the past 6 months cannot be > 180/100",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",12,"No LDL > 250",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",13,"No HDL < 25",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",14,"No triglycerides > 1000",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",15,"No liver function test > 3 times the upper limit of normal",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",7,"No autoimmune disorder ",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",8,"No concomitant use of oral steroids",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",5,"No initiation of chronic dialysis or renal transplant",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",6,"No diagnosis of HIV",5653
+"PrevalentUsersOfThiazideThiazideLikeDiuretics(Monotherapy)WithHypertension",9,"No BMI measurement > 50",5653
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15680
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15680
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15680
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15680
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15680
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",0,"age >=18",15675
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",2,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15675
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",3,"Hypertension diagnosis anytime before start-date",15675
+"PrevalentUsersOfThiazideThiazideLikeDuretics(IncludingNonMonotherapy)WithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15675
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",0,"age >=18",15686
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",1,"has >=180d of prior observation",15686
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",3,"Has T/C drug drug era overlapping day -30 or a drug exposure in the last 60 days",15686
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",4,"Hypertension diagnosis anytime before start-date.",15686
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",5,"No exposure to any other antihypertensives within 180 days before start-date",15686
+"PrevalentUsersOfThiazideThiazideLikeDuretics(Monotherapy)HospitalizedWithCovid19HistoryOfHypertension",2,"No hospitalization for COVID19 in the 6 months preceding admission",15686
+"UsersOfHydroxychloroquine+Amoxicillin",0,"has both drugs on index",15691
+"UsersOfHydroxychloroquine+Amoxicillin",1,"Prior diagnosis of RA",15691
+"UsersOfHydroxychloroquine+Azithromycin",0,"has both drugs on index",15690
+"UsersOfHydroxychloroquine+Azithromycin",1,"prior diagnosis of RA",15690

@@ -1,4 +1,34 @@
 "cohortName","ruleSequence","ruleName","cohortId"
+"newUsersOfSulfasazineWithPriorRheumatoidArthritis",0,"age >=18",15148
+"newUsersOfSulfasazineWithPriorRheumatoidArthritis",1,"does not have hospitalization for influenza in the 6 months preceding admission",15148
+"personsHospitalizedWithCovid19BroadNoPriorObservationRequired",0,"age >=18",15154
+"personsHospitalizedWithCovid19BroadNoPriorObservationRequired",1,"does not have hospitalization for influenza in the 6 months preceding admission",15154
+"personsHospitalizedWithCovid19BroadWPriorObservation",1,"has >=365d of prior observation",15153
+"personsHospitalizedWithCovid19BroadWPriorObservation",2,"does not have hospitalization for influenza in the 6 months preceding admission",15153
+"personsHospitalizedWithCovid19BroadWPriorObservation",0,"age >=18",15153
+"personsHospitalizedWithCovid19NarrowWNoPriorObservationRequired",1,"has >=365d of prior observation",15151
+"personsHospitalizedWithCovid19NarrowWNoPriorObservationRequired",2,"does not have hospitalization for COVID19 in the 6 months preceding admission",15151
+"personsHospitalizedWithCovid19NarrowWNoPriorObservationRequired",0,"age >=18",15151
+"personsHospitalizedWithCovid19NarrowWPriorObservation",1,"does not have hospitalization for COVID19 in the 6 months preceding admission",15150
+"personsHospitalizedWithCovid19NarrowWPriorObservation",0,"age >=18",15150
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20092010Season",0,"age >=18",15143
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20092010Season",1,"has >=365d of prior observation",15143
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20092010Season",2,"does not have hospitalization for influenza in the 6 months preceding admission",15143
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20142019Season",0,"age >=18",15149
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20142019Season",1,"has >=365d of prior observation",15149
+"personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20142019Season",2,"does not have hospitalization for COVID19 in the 6 months preceding admission",15149
+"personsHospitalizedWithInfluenzaBroadWPriorObservation20092010Season",0,"age >=18",15152
+"personsHospitalizedWithInfluenzaBroadWPriorObservation20092010Season",1,"does not have hospitalization for COVID19 in the 6 months preceding admission",15152
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20092010Season",0,"age >=18",15145
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20092010Season",2,"does not have hospitalization for influenza in the 6 months preceding admission",15145
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20092010Season",1,"has >=365d of prior observation",15145
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20142019Season",0,"age >=18",15147
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20142019Season",1,"has >=365d of prior observation",15147
+"personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20142019Season",2,"does not have hospitalization for influenza in the 6 months preceding admission",15147
+"personsHospitalizedWithInfluenzaNarrowWPriorObservation20092010Season",1,"does not have hospitalization for influenza in the 6 months preceding admission",15144
+"personsHospitalizedWithInfluenzaNarrowWPriorObservation20092010Season",0,"age >=18",15144
+"personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons",0,"age >=18",15146
+"personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons",1,"does not have hospitalization for influenza in the 6 months preceding admission",15146
 "NewUsersOfHydroxychloroquineWithPriorRheumatoidArthritis",0,"has rheumatoid arthritis recorded any time on or prior to treatment",15693
 "NewUsersOfSulfasazineWithPriorRheumatoidArthritis",0,"has rheumatoid arthritis recorded any time on or prior to treatment",15694
 "PrevalentUsersOfAceInhibitor(Monotherapy)WithHypertension",0,"Age >= 18 years old",15661

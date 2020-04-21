@@ -2,3 +2,5 @@ cohortGroup,fileName
 Exposures,settings/CohortToCreateExposures.csv
 SafetyOutcomes,settings/CohortsToCreateSafetyOutcomes.csv
 EfficacyOutcomes,settings/CohortsToCreateEfficayOutcomes.csv
+Characterizations,settings/CohortToCreateCharacterizations.csv
+Predictions,settings/CohortToCreatePredictions.csv

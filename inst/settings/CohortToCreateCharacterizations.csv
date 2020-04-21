@@ -1,0 +1,13 @@
+name,atlasName,atlasId,cohortId
+newUsersOfSulfasazineWithPriorRheumatoidArthritis,"Persons hospitalized with influenza, broad, w/ no prior observation required, 2014-2019 season",15148,15148
+personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20142019Season,Persons hospitalized with COVID-19 narrow w/ prior observation,15149,15149
+personsHospitalizedWithCovid19NarrowWPriorObservation,"Persons hospitalized with COVID-19 narrow, w/ no prior observation required",15150,15150
+personsHospitalizedWithCovid19NarrowWNoPriorObservationRequired,Persons hospitalized with COVID-19 broad w/ prior observation,15151,15151
+personsHospitalizedWithCovid19BroadWPriorObservation,"Persons hospitalized with influenza, broad, w/ prior observation, 2009-2010 season",15153,15153
+personsHospitalizedWithInfluenzaBroadWPriorObservation20092010Season,"Persons hospitalized with COVID-19, broad, no prior observation required",15152,15152
+personsHospitalizedWithCovid19BroadNoPriorObservationRequired,"Persons hospitalized with influenza, broad, w/ no prior observation required, 2009-2010 season",15154,15154
+personsHospitalizedWithInfluenzaBroadWNoPriorObservationRequired20092010Season,"Persons hospitalized with influenza, narrow, w/ prior observation, 2009-2010 season",15143,15143
+personsHospitalizedWithInfluenzaNarrowWPriorObservation20092010Season,"Persons hospitalized with influenza, narrow, no prior observation required, 2009-2010 season",15144,15144
+personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20092010Season,"Persons hospitalized with influenza, narrow, w/ prior observation, 2014-2019 seasons",15145,15145
+personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons,"Persons hospitalized with influenza, narrow, no prior observation required, 2014-2019 season",15146,15146
+personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20142019Season,"Persons hospitalized with influenza, broad, w/ prior observation, 2014-2019 season",15147,15147

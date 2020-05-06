@@ -4,7 +4,7 @@
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://cloud.r-project.org"
+        "URL": "https://ftp.fau.de/cran"
       }
     ]
   },
@@ -45,16 +45,16 @@
     },
     "DatabaseConnector": {
       "Package": "DatabaseConnector",
-      "Version": "2.4.4",
+      "Version": "2.4.2",
       "Source": "Repository",
-      "Repository": null,
-      "Hash": "5bc7471c49935d2c0920b41cf1fc2c8d"
+      "Repository": "CRAN",
+      "Hash": "4f1271b69d1656754889dfd00b607a25"
     },
     "DatabaseConnectorJars": {
       "Package": "DatabaseConnectorJars",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": null,
+      "Repository": "CRAN",
       "Hash": "0a923f7859e5fabb967660aa0f61ef1e"
     },
     "FeatureExtraction": {
@@ -179,7 +179,7 @@
       "Package": "SqlRender",
       "Version": "1.6.5",
       "Source": "Repository",
-      "Repository": null,
+      "Repository": "CRAN",
       "Hash": "1d2f21527ae3724bdec0e1e7c212b598"
     },
     "XML": {

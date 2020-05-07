@@ -16,6 +16,18 @@
       "Repository": "CRAN",
       "Hash": "8f9ce74c6417d61f0782cbae5fd2b7b0"
     },
+	"Covid19CohortEvaluation": {
+      "Package": "Covid19CohortEvaluation",
+      "Version": "0.0.1",
+      "Source": "GitHub",
+      "Remotes": "ohdsi/Covid19CohortEvaluation, ohdsi/OhdsiSharing",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "Covid19CohortEvaluation",
+      "RemoteUsername": "ohdsi-studies",
+      "RemoteRef": "8ce0bac6de143a0ea4c1b495e30cacb7674e768a",
+      "RemoteSha": "8ce0bac6de143a0ea4c1b495e30cacb7674e768a"
+    },
     "CohortDiagnostics": {
       "Package": "CohortDiagnostics",
       "Version": "0.1.3",

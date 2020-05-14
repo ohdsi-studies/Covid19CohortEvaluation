@@ -11,3 +11,83 @@ personsHospitalizedWithInfluenzaNarrowWPriorObservation20092010Season,"Persons h
 personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20092010Season,"Persons hospitalized with influenza, narrow, w/ prior observation, 2014-2019 seasons",15145,15145
 personsHospitalizedWithInfluenzaNarrowWPriorObservation20142019Seasons,"Persons hospitalized with influenza, narrow, no prior observation required, 2014-2019 season",15146,15146
 personsHospitalizedWithInfluenzaNarrowNoPriorObservationRequired20142019Season,"Persons hospitalized with influenza, broad, w/ prior observation, 2014-2019 season",15147,15147
+charybdisPrevalentType2DiabetesMellitus,[CHARYBDIS] Prevalent type 2 diabetes mellitus,16196,16196
+prevalentHypertension,Prevalent hypertension,16197,16197
+ohdsiCovid19Copd1St2NdDefinition,[OHDSI Covid19] COPD 1st_2nd definition,16198,16198
+asthma1St2NdDefinition,Asthma 1st_2nd definition,16199,16199
+ohdsiCovid19CopdOrAsthma,[OHDSI Covid19] COPD or Asthma,16200,16200
+asthmacopdStep1,Asthma/COPD Step 1,16201,16201
+asthmacopdStep2,Asthma/COPD Step 2,16202,16202
+asthmacopdStep3,Asthma/COPD Step 3,16203,16203
+ohdsiCovid-19PrevalentHeartDisease,[OHDSI Covid-19] Prevalent Heart disease,16204,16204
+prevalantMalignantNeoplasmExcludingNon-MelanomaSkinCancer,Prevalant malignant neoplasm excluding non-melanoma skin cancer,16205,16205
+ohdsiCovid-19PrevalentHepatitisC,[OHDSI Covid-19] Prevalent Hepatitis C,16206,16206
+ohdsi-Covid19Dementia,[OHDSI-Covid19] Dementia,16207,16207
+ohdsi-Covid19AutoimmuneConditionT1DmRaPsoPsaMsSleAddisonsGravesSjogrensHashimotoMyastheniaGravisAutoimmuneVasculitisPerniciousAnemiaCeliacDiseaseSclerodermaSarcoidUlcerativeColitisCrohns,"[OHDSI-Covid19] Autoimmune condition (T1DM, RA, PsO, PsA, MS, SLE, Addisons, Graves, Sjogrens, Hashimoto, Myasthenia gravis, Autoimmune vasculitis, Pernicious anemia, Celiac disease, Scleroderma, Sarcoid, Ulcerative colitis, Crohns)",16208,16208
+ohdsi-Covid19GestationalDiabetesEpisodes,[OHDSI-Covid19] Gestational diabetes episodes,16209,16209
+ohdsiCovid-19EclampsiaAndPre-Eclampsia,[OHDSI Covid-19] Eclampsia and pre-eclampsia,16210,16210
+covidCharacterzationCoughEpisodes,[COVID Characterzation] Cough episodes,16211,16211
+covidCharacterzationMyalgiaEpisodes,[COVID Characterzation] Myalgia episodes,16212,16212
+covidCharacterzationMalaiseOrFatigue,[COVID Characterzation] Malaise or fatigue,16213,16213
+covidCharacterzationDyspneaEpisodes,[COVID Characterzation] Dyspnea episodes,16214,16214
+anosmiaOrHyposmiaOrDysgeusiaEpisodes,Anosmia OR Hyposmia OR Dysgeusia episodes,16215,16215
+ohdsiCovid19Hospitalization,[OHDSI Covid19] Hospitalization,16216,16216
+hospitalizationsWithPneumonia-IndexedByPneumonia,Hospitalizations with pneumonia-indexed by pneumonia,16217,16217
+ohdsiCovid19AcuteRespiratoryDistressSyndromeDuringHospitalization,[OHDSI Covid19] Acute Respiratory Distress syndrome during hospitalization,16218,16218
+acuteKidneyInjuryAkiDuringHospitalizationUsingDiagnosisOnly,Acute kidney injury (AKI) during hospitalization using diagnosis only,16219,16219
+ohdsiCovid19SepsisDuringHospitalization,[OHDSI Covid19] Sepsis during hospitalization,16220,16220
+venousThromboembolicPulmonaryEmbolismAndDeepVeinThrombosisEvents,Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events,16221,16221
+pulmonaryEmbolismCandidatePhenotype,Pulmonary Embolism Candidate Phenotype,16222,16222
+nonCerebralDvtCandidatePhenotype,Non Cerebral DVT Candidate Phenotype,16223,16223
+ohdsiCovid19CardiacArrhythmiaDuringHospitalization,[OHDSI Covid19] Cardiac arrhythmia during hospitalization,16224,16224
+ohdsiCovid19BradycardiaOrHeartBlockDuringHospitalization,[OHDSI Covid19] Bradycardia or heart block during hospitalization,16225,16225
+ohdsiCovid19SupraventricularArrythymiaDuringHospitalization,[OHDSI Covid19] Supraventricular arrythymia during hospitalization,16226,16226
+ohdsiCovid19VacaDuringHospitalization,[OHDSI Covid19] VA/CA during hospitalization,16227,16227
+ohdsiCovid19HospitalizationForAsthma,[OHDSI Covid19] Hospitalization for Asthma,16228,16228
+ohdsiCovid19HospitalizationForCopd,[OHDSI Covid19] Hospitalization for COPD,16229,16229
+covidCharacterzationFeverAsATemplateForFeatureHtatIsAnEpisodicEventForCharacterizatoin,[COVID Characterzation] Fever as a template for feature htat is an episodic event for characterizatoin,16230,16230
+legendchronicKidneyDisease,[LEGEND]Chronic kidney disease,16231,16231
+anginaDuringHospitalization,Angina during hospitalization,16232,16232
+bleedingDuringHospitalization,Bleeding during hospitalization,16233,16233
+multi-SystemInflammatorySyndromeKawasakiDiseaseOrToxicShockSyndrome,Multi-system inflammatory syndrome (Kawasaki disease or toxic shock syndrome),16234,16234
+eb2704EcmoForCovid-19Cuimc,[EB 27_04] ECMO for COVID-19 [CUIMC],16235,16235
+ebInpatientHaemorrhageExcludingHead,[EB] Inpatient Haemorrhage excluding head,16236,16236
+ebInpatientLowerLimbIschemiaEpisodes,[EB] inpatient lower limb ischemia episodes,16237,16237
+ebInpatientLowerLimbAmputation,[EB] inpatient lower limb amputation,16238,16238
+ohdsiCovid-19Stillbirth,[OHDSI Covid-19] Stillbirth,16239,16239
+ohdsiCovid-19LivebirthDelivery,[OHDSI Covid-19] Livebirth Delivery,16240,16240
+ohdsiCovid-19LivebirthPretermDelivery,[OHDSI Covid-19] Livebirth Preterm Delivery,16241,16241
+ohdsiCovid-19LivebirthPostTermDelivery1,[OHDSI Covid-19] Livebirth Post term Delivery (1),16242,16242
+ohdsiCovid-19LivebirthExludingPretermAndPostTermDelivery,"[OHDSI Covid-19] Livebirth, exluding preterm and post term delivery",16243,16243
+ohdsiCovid-19Abortion1,[OHDSI Covid-19] Abortion (1),16244,16244
+ohdsiCovid-19PrematureRuptureOfMembranes1,[OHDSI Covid-19] Premature Rupture of Membranes (1),16245,16245
+ohdsiCovid-19FetalGrowthRestriction1,[OHDSI Covid-19] Fetal growth restriction (1),16246,16246
+cesareanSection,Cesarean section,16247,16247
+pneumoniaEpisodes,Pneumonia episodes,16248,16248
+ohdsi-Covid19IntensiveServicesDuringHospitalization,[OHDSI-Covid19] intensive services during hospitalization,16249,16249
+ohdsi-Covid19MehcanicalVentillationDuringHospitalization,[OHDSI-Covid19] mehcanical ventillation during hospitalization,16250,16250
+ohdsi-Covid19TracheostomyDuringHospitalization,[OHDSI-Covid19] tracheostomy during hospitalization,16251,16251
+ohdsi-Covid19EcmoDuringHospitalization,[OHDSI-Covid19] ECMO during hospitalization,16252,16252
+ohdsi-Covid19DialysisDuringHospitalization,[OHDSI-Covid19] dialysis during hospitalization,16253,16253
+prevalentObesity,Prevalent obesity,16254,16254
+prevalentHumanImmunodeficiencyVirusInfection,Prevalent Human immunodeficiency virus infection,16255,16255
+heartFailureDuringHospitalization,Heart failure during hospitalization,16256,16256
+legendHtnIschemicStrokeEvents,[LEGEND HTN] Ischemic stroke events,7363,7363
+legendHtnHemorrhagicStrokeIntracerebralBleedingEvents,[LEGEND HTN] Hemorrhagic stroke (intracerebral bleeding) events,7372,7372
+incidentDepressionWithNoPriorTreatmentAndNoManiapsychoses,Incident depression with no prior treatment and no mania/psychoses,16191,16191
+hospitalizationForPsychosis,Hospitalization for psychosis,16192,16192
+legendDepressionSuicideAndSuicidalIdeation,[LEGEND Depression] Suicide and suicidal ideation,7467,7467
+legendHtnPersonsWithChestPainOrAngina,[LEGEND HTN] Persons with chest pain or angina,7396,7396
+legendHtnPersonsWithHepaticFailure,[LEGEND HTN] Persons with hepatic failure,7381,7381
+legendHtnAcutePancreatitisEvents,[LEGEND HTN] Acute pancreatitis events,7400,7400
+legendHtnTotalCardiovascularDiseaseEvents,[LEGEND HTN] Total cardiovascular disease events,15692,15692
+legendHtnGastrointestinalBleedingEvents,[LEGEND HTN] Gastrointestinal bleeding events,7376,7376
+legendHtnCardiovascular-RelatedMortality,[LEGEND HTN] Cardiovascular-related mortality,7362,7362
+legendHtnTransientIschemicAttackEvents,[LEGEND HTN] Transient ischemic attack events,7370,7370
+legendHtnStrokeIschemicOrHemorrhagicEvents,[LEGEND HTN] Stroke (ischemic or hemorrhagic) events,311,311
+legendHtnAcuteMyocardialInfarctionEvents,[LEGEND HTN] Acute myocardial infarction events,7364,7364
+ohdsiCovid-19PrevalentHepatitisC,[OHDSI Covid-19] Prevalent Hepatitis C,16206,16206
+ohdsiCovid-19Tuberculosis,[OHDSI Covid-19] Tuberculosis,16157,16157
+prevalantMalignantNeoplasmExcludingNon-MelanomaSkinCancer,Prevalant malignant neoplasm excluding non-melanoma skin cancer,16205,16205
+ohdsiCovid-19PrevalentHeartDisease,[OHDSI Covid-19] Prevalent Heart disease,16204,16204
+legendHtnPersonsWithEndStageRenalDisease,[LEGEND HTN] Persons with end stage renal disease,7374,7374

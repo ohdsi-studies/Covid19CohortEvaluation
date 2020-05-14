@@ -1,0 +1,169 @@
+{
+  "cdmVersionRange": [">=5.0.0"],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ProcedureOccurrence": {
+          "CodesetId": 7,
+          "ProcedureTypeExclude": false
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": [0],
+      "PostDays": [0]
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": ["All"]
+    }
+  },
+  "AdditionalCriteria": {
+    "Type": ["ALL"],
+    "CriteriaList": [
+      {
+        "Criteria": {
+          "VisitOccurrence": {
+            "CodesetId": 8,
+            "VisitTypeExclude": false
+          }
+        },
+        "StartWindow": {
+          "Start": {
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 0,
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": false
+        },
+        "EndWindow": {
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": true
+        },
+        "RestrictVisit": false,
+        "IgnoreObservationPeriod": false,
+        "Occurrence": {
+          "Type": 2,
+          "Count": 1,
+          "IsDistinct": false
+        }
+      }
+    ],
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "ConceptSets": [
+    {
+      "id": 7,
+      "name": "[EB 24_03] Lower limb amputation procedure",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 4219032,
+              "CONCEPT_NAME": "Amputation of lower limb",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "397117006",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Procedure"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 2101682,
+              "CONCEPT_NAME": "Anesthesia for open procedures on bones of lower leg, ankle, and foot; radical resection (including below knee amputation)",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "01482",
+              "DOMAIN_ID": "Procedure",
+              "VOCABULARY_ID": "CPT4",
+              "CONCEPT_CLASS_ID": "CPT4"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "[OHDSI Covid19 v1] Inpatient Visit",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 262,
+              "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "ERIP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 9201,
+              "CONCEPT_NAME": "Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "IP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    }
+  ],
+  "QualifiedLimit": {
+    "Type": ["All"]
+  },
+  "ExpressionLimit": {
+    "Type": ["All"]
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": ["StartDate"],
+      "Offset": [1]
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": ["ERA"],
+    "EraPad": [30]
+  },
+  "CensorWindow": {}
+}

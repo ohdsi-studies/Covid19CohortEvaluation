@@ -23,4 +23,4 @@ VignetteBuilder: knitr
 URL: https://ohdsi-studies.github.io/Covid19CohortEvaluation, https://github.com/ohdsi-studies/Covid19CohortEvaluation
 BugReports: https://github.com/ohdsi-studies/Covid19CohortEvaluation/issues
 LazyData: TRUE
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0

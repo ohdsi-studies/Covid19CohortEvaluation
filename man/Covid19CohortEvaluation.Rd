@@ -4,6 +4,3 @@
 \name{Covid19CohortEvaluation}
 \alias{Covid19CohortEvaluation}
 \title{Covid19CohortEvaluation}
-\description{
-Covid19CohortEvaluation
-}

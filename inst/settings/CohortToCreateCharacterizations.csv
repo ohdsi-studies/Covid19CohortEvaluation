@@ -85,8 +85,5 @@ legendHtnCardiovascular-RelatedMortality,[LEGEND HTN] Cardiovascular-related mor
 legendHtnTransientIschemicAttackEvents,[LEGEND HTN] Transient ischemic attack events,7370,7370
 legendHtnStrokeIschemicOrHemorrhagicEvents,[LEGEND HTN] Stroke (ischemic or hemorrhagic) events,311,311
 legendHtnAcuteMyocardialInfarctionEvents,[LEGEND HTN] Acute myocardial infarction events,7364,7364
-ohdsiCovid-19PrevalentHepatitisC,[OHDSI Covid-19] Prevalent Hepatitis C,16206,16206
 ohdsiCovid-19Tuberculosis,[OHDSI Covid-19] Tuberculosis,16157,16157
-prevalantMalignantNeoplasmExcludingNon-MelanomaSkinCancer,Prevalant malignant neoplasm excluding non-melanoma skin cancer,16205,16205
-ohdsiCovid-19PrevalentHeartDisease,[OHDSI Covid-19] Prevalent Heart disease,16204,16204
 legendHtnPersonsWithEndStageRenalDisease,[LEGEND HTN] Persons with end stage renal disease,7374,7374

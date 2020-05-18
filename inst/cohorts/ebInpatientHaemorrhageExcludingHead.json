@@ -1,0 +1,611 @@
+{
+  "cdmVersionRange": [">=5.0.0"],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ConditionOccurrence": {
+          "CodesetId": 2,
+          "ConditionTypeExclude": false
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": [0],
+      "PostDays": [0]
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": ["All"]
+    }
+  },
+  "AdditionalCriteria": {
+    "Type": ["ALL"],
+    "CriteriaList": [
+      {
+        "Criteria": {
+          "VisitOccurrence": {
+            "CodesetId": 3,
+            "VisitTypeExclude": false
+          }
+        },
+        "StartWindow": {
+          "Start": {
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 0,
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": false
+        },
+        "EndWindow": {
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": true
+        },
+        "RestrictVisit": false,
+        "IgnoreObservationPeriod": false,
+        "Occurrence": {
+          "Type": 2,
+          "Count": 1,
+          "IsDistinct": false
+        }
+      }
+    ],
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "ConceptSets": [
+    {
+      "id": 2,
+      "name": "Haemorrhage excluding head",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 437312,
+              "CONCEPT_NAME": "Bleeding",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "131148009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 376713,
+              "CONCEPT_NAME": "Cerebral hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "274100004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43530727,
+              "CONCEPT_NAME": "Spontaneous cerebral hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "291571000119106",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4144154,
+              "CONCEPT_NAME": "Non-traumatic intracerebral ventricular hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "425957003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 439040,
+              "CONCEPT_NAME": "Subdural hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "35486000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 432923,
+              "CONCEPT_NAME": "Subarachnoid hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "21454007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4017107,
+              "CONCEPT_NAME": "Traumatic subdural hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "209987007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4111709,
+              "CONCEPT_NAME": "Non-traumatic subdural hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "195176009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 439847,
+              "CONCEPT_NAME": "Intracranial hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "1386000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4087649,
+              "CONCEPT_NAME": "Blood in eye",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "246681007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4247597,
+              "CONCEPT_NAME": "Intraocular hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "93478000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 433778,
+              "CONCEPT_NAME": "Orbital hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "31056006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4096343,
+              "CONCEPT_NAME": "Bleeding from ear",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "26322001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 380113,
+              "CONCEPT_NAME": "Hemorrhage in optic nerve sheaths",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "14460007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4096682,
+              "CONCEPT_NAME": "Bleeding from nose",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "249366005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4059114,
+              "CONCEPT_NAME": "Meningeal hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "21233002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4047852,
+              "CONCEPT_NAME": "Cephalhematoma due to birth trauma",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "206200000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4049224,
+              "CONCEPT_NAME": "Anterior epistaxis",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "232354002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4307826,
+              "CONCEPT_NAME": "Fetal cephalhematoma",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "83095000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4155903,
+              "CONCEPT_NAME": "Blood in ear canal",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "271741001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 373205,
+              "CONCEPT_NAME": "Hemorrhage of eyelid",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "63720000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4311406,
+              "CONCEPT_NAME": "Bleeding gums",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "86276007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4330466,
+              "CONCEPT_NAME": "Bleeding from mouth",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "22490002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4258539,
+              "CONCEPT_NAME": "Hematoma of scalp",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "439461004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4051478,
+              "CONCEPT_NAME": "Posterior epistaxis",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "232355001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 439130,
+              "CONCEPT_NAME": "Subgaleal hemorrhage",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "276622005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4310298,
+              "CONCEPT_NAME": "Hematoma of face",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "423051001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4036965,
+              "CONCEPT_NAME": "Blood discharge from ear",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "162365003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "[OHDSI Covid19 v1] Inpatient Visit",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 262,
+              "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "ERIP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 9201,
+              "CONCEPT_NAME": "Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "IP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    }
+  ],
+  "QualifiedLimit": {
+    "Type": ["All"]
+  },
+  "ExpressionLimit": {
+    "Type": ["All"]
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": ["StartDate"],
+      "Offset": [1]
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": ["ERA"],
+    "EraPad": [30]
+  },
+  "CensorWindow": {}
+}

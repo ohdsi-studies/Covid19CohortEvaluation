@@ -33,6 +33,8 @@ cohortGroups <- readr::read_csv(pathToCsv, col_types = readr::cols())
 outputFolder <- "s:/Covid19CohortEvaluation/OhdsiConceptPrevalence"
 cohortGroups$exportFolder <- file.path(outputFolder, cohortGroups$cohortGroup, "export")
 databaseId <- "OHDSI Concept Prevalence"
+databaseName <- "OHDSI Concept Prevalence study"
+databaseDescription <- "Concept counts across the OHDSI research network, as collected in the Concept Prevalence study. "
 
 for (i in 1:nrow(cohortGroups)) {
   ParallelLogger::logInfo("Generating diagnostics for cohort group ", cohortGroups$cohortGroup[i])
@@ -48,6 +50,8 @@ for (i in 1:nrow(cohortGroups)) {
                                           conceptCountsTable = conceptCountsTable,
                                           exportFolder = cohortGroups$exportFolder[i],
                                           databaseId = databaseId,
+                                          databaseName = databaseName,
+                                          databaseDescription = databaseDescription,
                                           runIncludedSourceConcepts = TRUE,
                                           runOrphanConcepts = TRUE,
                                           minCellCount = 5) 

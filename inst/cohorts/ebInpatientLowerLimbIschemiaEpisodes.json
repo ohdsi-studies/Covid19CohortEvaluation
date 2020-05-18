@@ -1,0 +1,662 @@
+{
+  "cdmVersionRange": [">=5.0.0"],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ConditionOccurrence": {
+          "CodesetId": 8,
+          "ConditionTypeExclude": false
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": [0],
+      "PostDays": [0]
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": ["All"]
+    }
+  },
+  "AdditionalCriteria": {
+    "Type": ["ALL"],
+    "CriteriaList": [
+      {
+        "Criteria": {
+          "VisitOccurrence": {
+            "CodesetId": 7,
+            "VisitTypeExclude": false
+          }
+        },
+        "StartWindow": {
+          "Start": {
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 0,
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": false
+        },
+        "EndWindow": {
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Coeff": 1
+          },
+          "UseIndexEnd": false,
+          "UseEventEnd": true
+        },
+        "RestrictVisit": false,
+        "IgnoreObservationPeriod": false,
+        "Occurrence": {
+          "Type": 2,
+          "Count": 1,
+          "IsDistinct": false
+        }
+      }
+    ],
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "ConceptSets": [
+    {
+      "id": 7,
+      "name": "[OHDSI Covid19 v1] Inpatient Visit",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 262,
+              "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "ERIP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 9201,
+              "CONCEPT_NAME": "Inpatient Visit",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "IP",
+              "DOMAIN_ID": "Visit",
+              "VOCABULARY_ID": "Visit",
+              "CONCEPT_CLASS_ID": "Visit"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "[EB 24_03] Limb ischemia",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 315558,
+              "CONCEPT_NAME": "Atherosclerosis of arteries of the extremities",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "51274000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 439928,
+              "CONCEPT_NAME": "Gangrenous disorder",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "372070002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 43020443,
+              "CONCEPT_NAME": "Limb ischemia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "21631000119105",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4236905,
+              "CONCEPT_NAME": "Thrombosis of arteries of lower extremity",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "90958004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4161947,
+              "CONCEPT_NAME": "Fournier's gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "398318005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 192952,
+              "CONCEPT_NAME": "Hernia, with gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "79990007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4009168,
+              "CONCEPT_NAME": "Gangrene of gallbladder",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "111372003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46273522,
+              "CONCEPT_NAME": "Gangrene due to Raynaud disease",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "286301000119102",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 199868,
+              "CONCEPT_NAME": "Incisional hernia with gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "18378006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 192959,
+              "CONCEPT_NAME": "Incisional ventral hernia with gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "414475000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4322625,
+              "CONCEPT_NAME": "Gangrenous pneumonia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "7063008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4127735,
+              "CONCEPT_NAME": "Fournier's gangrene of scrotum",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "236782005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4124837,
+              "CONCEPT_NAME": "Upper limb ischemia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "233959009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4111844,
+              "CONCEPT_NAME": "Gangrene of finger",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "195304004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4105322,
+              "CONCEPT_NAME": "Intestinal gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "29451002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4296499,
+              "CONCEPT_NAME": "Penile gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "403469006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4055630,
+              "CONCEPT_NAME": "Gangrene of scrotum",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "19603004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 761076,
+              "CONCEPT_NAME": "Gangrene of perineum",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "14250001000004102",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4108372,
+              "CONCEPT_NAME": "Gangrene of hand",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "195306002",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4300997,
+              "CONCEPT_NAME": "Pulmonary gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "77920006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36684321,
+              "CONCEPT_NAME": "Gangrene due to recurrent femoral hernia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "782503008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4185786,
+              "CONCEPT_NAME": "Hernia of anterior abdominal wall with obstruction AND gangrene",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "414398007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4171679,
+              "CONCEPT_NAME": "Inguinal hernia with gangrene and obstruction",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "49678000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 44783945,
+              "CONCEPT_NAME": "Gas gangrene of upper limb",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "699952001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 46273299,
+              "CONCEPT_NAME": "Gangrene of colostomy",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "712646007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4249303,
+              "CONCEPT_NAME": "Diaphragmatic hernia with gangrene AND obstruction",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "73651003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4187669,
+              "CONCEPT_NAME": "Femoral hernia with gangrene and obstruction",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "45989004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4027751,
+              "CONCEPT_NAME": "Gangrenous paraesophageal hernia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "10728006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36676301,
+              "CONCEPT_NAME": "Gangrene co-occurrent and due to hernia of abdominal wall",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "773094000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36676302,
+              "CONCEPT_NAME": "Gangrene co-occurrent and due to internal hernia of abdomen",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "773095004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 36684320,
+              "CONCEPT_NAME": "Gangrene due to recurrent umbilical hernia",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "782502003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": true,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    }
+  ],
+  "QualifiedLimit": {
+    "Type": ["All"]
+  },
+  "ExpressionLimit": {
+    "Type": ["All"]
+  },
+  "InclusionRules": [],
+  "EndStrategy": {
+    "DateOffset": {
+      "DateField": ["StartDate"],
+      "Offset": [1]
+    }
+  },
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": ["ERA"],
+    "EraPad": [30]
+  },
+  "CensorWindow": {}
+}

@@ -1,0 +1,181 @@
+{
+  "cdmVersionRange": [">=5.0.0"],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "DrugExposure": {
+          "CodesetId": 1,
+          "DrugTypeExclude": false
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": [90],
+      "PostDays": [0]
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": ["All"]
+    }
+  },
+  "AdditionalCriteria": {
+    "Type": ["ALL"],
+    "CriteriaList": [
+      {
+        "Criteria": {
+          "DrugExposure": {
+            "CodesetId": 2,
+            "DrugTypeExclude": false
+          }
+        },
+        "StartWindow": {
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 90,
+            "Coeff": 1
+          }
+        },
+        "RestrictVisit": false,
+        "IgnoreObservationPeriod": false,
+        "Occurrence": {
+          "Type": 2,
+          "Count": 1,
+          "IsDistinct": false
+        }
+      }
+    ],
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "ConceptSets": [
+    {
+      "id": 0,
+      "name": "ADHD",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 438409,
+              "CONCEPT_NAME": "Attention deficit hyperactivity disorder",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "406506008",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 440086,
+              "CONCEPT_NAME": "Child attention deficit disorder",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "192127007",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "Concerta",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 705944,
+              "CONCEPT_NAME": "Methylphenidate",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "6901",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "AG formulation",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 705944,
+              "CONCEPT_NAME": "Methylphenidate",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "6901",
+              "DOMAIN_ID": "Drug",
+              "VOCABULARY_ID": "RxNorm"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Renal Insufficiency",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 197320,
+              "CONCEPT_NAME": "Acute renal failure syndrome",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "14669001",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 196991,
+              "CONCEPT_NAME": "Chronic renal impairment",
+              "STANDARD_CONCEPT_CAPTION": "Unknown",
+              "INVALID_REASON_CAPTION": "Unknown",
+              "CONCEPT_CODE": "236425005",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    }
+  ],
+  "QualifiedLimit": {
+    "Type": ["First"]
+  },
+  "ExpressionLimit": {
+    "Type": ["First"]
+  },
+  "InclusionRules": [],
+  "CollapseSettings": {
+    "CollapseType": ["ERA"],
+    "EraPad": [0]
+  }
+}

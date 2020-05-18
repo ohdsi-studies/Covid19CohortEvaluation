@@ -1,0 +1,162 @@
+{
+  "cdmVersionRange": [">=5.0.0"],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "ConditionOccurrence": {
+          "CodesetId": 4,
+          "ConditionTypeExclude": false
+        }
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": [0],
+      "PostDays": [0]
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": ["First"]
+    }
+  },
+  "ConceptSets": [
+    {
+      "id": 4,
+      "name": "[OHDSI Covid-19] Heart disease (CAD, CHF, CHF, MI, Pulmonic valve stenosis, mitral valve regurgitation ) ",
+      "expression": {
+        "items": [
+          {
+            "concept": {
+              "CONCEPT_ID": 444031,
+              "CONCEPT_NAME": "Chronic heart failure",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "48447003",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 312723,
+              "CONCEPT_NAME": "Congenital heart disease",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "13213009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4187067,
+              "CONCEPT_NAME": "Disorder of coronary artery",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "414024009",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4124693,
+              "CONCEPT_NAME": "Hypertrophic cardiomyopathy",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "233873004",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 443962,
+              "CONCEPT_NAME": "Mitral valve regurgitation",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "48724000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4329847,
+              "CONCEPT_NAME": "Myocardial infarction",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "22298006",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          },
+          {
+            "concept": {
+              "CONCEPT_ID": 4209011,
+              "CONCEPT_NAME": "Pulmonic valve stenosis",
+              "STANDARD_CONCEPT": "S",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "INVALID_REASON": "V",
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_CODE": "56786000",
+              "DOMAIN_ID": "Condition",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_CLASS_ID": "Clinical Finding"
+            },
+            "isExcluded": false,
+            "includeDescendants": true,
+            "includeMapped": false
+          }
+        ]
+      }
+    }
+  ],
+  "QualifiedLimit": {
+    "Type": ["First"]
+  },
+  "ExpressionLimit": {
+    "Type": ["First"]
+  },
+  "InclusionRules": [],
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": ["ERA"],
+    "EraPad": [0]
+  },
+  "CensorWindow": {}
+}
